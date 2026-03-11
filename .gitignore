@@ -1,2 +1,13 @@
-venv/
 .venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+.vscode/
+
+
+*.pem
+*.ppk
+
+.docker/

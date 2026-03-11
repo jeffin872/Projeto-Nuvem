@@ -1,0 +1,19 @@
+services:
+  web:
+    build: ./app
+    ports:
+      - "80:5000"
+    environment:
+      # URL no formato: postgresql://user:password@host:port/database
+      - DATABASE_URL=postgresql://admin:nuvem123@db:5432/projeto_db
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=nuvem123
+      - POSTGRES_DB=projeto_db
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
