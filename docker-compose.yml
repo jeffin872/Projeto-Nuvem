@@ -4,7 +4,6 @@ services:
     ports:
       - "80:5000"
     environment:
-      # URL no formato: postgresql://user:password@host:port/database
       - DATABASE_URL=postgresql://admin:nuvem123@db:5432/projeto_db
     depends_on:
       - db
