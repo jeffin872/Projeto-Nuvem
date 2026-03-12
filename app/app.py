@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 #Definindo o endereço do banco 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://admin:nuvem123@db:5432/projeto_db "
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://admin:nuvem123@db:5432/projeto_db"
 
 #Instanciando o sqlalchemy para que possa criar tabelas e etc..
 db = SQLAlchemy(app)
