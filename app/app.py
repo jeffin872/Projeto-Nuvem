@@ -1,8 +1,7 @@
 #Imports do flask, render template que é para fazer o web, o sqlalchemy que é para fazer a modelagem dos dados
-# e o 'os' que é para gerenciar os arquivos do seu repositorio
+#Imports do request, redirect e url_for, é pra poder fazer requisições http e recarregar a página após inserção de um novo usuario
 from flask import Flask, render_template_string, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
-import os 
 
 #Instanciando o Flask 
 app = Flask(__name__)

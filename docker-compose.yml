@@ -1,3 +1,5 @@
+#Criação do serviço web e imagem do docker 
+
 services:
   web:
     build: ./app
